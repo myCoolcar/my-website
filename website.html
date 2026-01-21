@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Michael Carr | Health Data Analyst</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #222;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #0f172a;
+            color: white;
+            padding: 12px 24px;
+            z-index: 1000;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-weight: bold;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background: #f1f5f9;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        section {
+            padding: 100px 24px 80px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 12px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .project-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .project-image {
+            height: 180px;
+            background: #cbd5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1e293b;
+            font-weight: bold;
+        }
+
+        .project-content {
+            padding: 16px;
+        }
+
+        footer {
+            background: #f8fafc;
+            text-align: center;
+            padding: 24px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="nav">
+        <div class="nav-title">Michael Carr</div>
+        <div class="dropdown">
+            <button>Menu ▾</button>
+            <div class="dropdown-content">
+                <a href="#about">About Me</a>
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                <a href="#projects">Projects</a>
+                <a href="#career">Career</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="about">
+    <h1>About Me</h1>
+    <p>
+        I am a public health and data analyst with a strong interest in how evidence,
+        policy, and operational decision-making intersect to shape health outcomes.
+        I completed a Master of Public Health at Imperial College London, graduating
+        with a distinction and specialising in Health Promotion and Service Improvement.
+    </p>
+    <p>
+        My academic work focused on the wider determinants of health, particularly the
+        role of commercial, structural, and environmental factors in shaping non-communicable
+        disease risk across the life course. My dissertation explored the relationship
+        between public transport infrastructure and cardiometabolic health outcomes,
+        combining quantitative analysis with policy interpretation. I presented this
+        work to academic and non-academic audiences and was later invited back to present
+        the findings to new students and staff.
+    </p>
+    <p>
+        What motivates my work is the belief that good data should lead to better
+        decisions, especially where resources are limited and inequalities are entrenched.
+        I am particularly interested in roles that sit between analysis, policy, and
+        service improvement, where insight can directly inform action.
+    </p>
+</section>
+
+<section id="projects">
+    <h2>Selected Projects</h2>
+    <p>
+        Each project follows a simple structure: identifying a real-world problem,
+        using data to understand it, and translating findings into practical insights
+        for decision-makers.
+    </p>
+
+    <div class="projects-grid">
+        <div class="project-card">
+            <div class="project-image">Visual Placeholder</div>
+            <div class="project-content">
+                <h3>Public Transport & Cardiometabolic Health</h3>
+                <p>
+                    Research project analysing how transport infrastructure relates
+                    to population-level cardiometabolic risk, with implications for
+                    urban planning and prevention policy.
+                </p>
+                <p>
+                    Focus: data cleaning, regression analysis, interpretation for
+                    non-technical audiences.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">Visual Placeholder</div>
+            <div class="project-content">
+                <h3>Emergency Department Waiting Times</h3>
+                <p>
+                    Quality improvement project aimed at reducing ophthalmology surgery
+                    waiting times using process mapping, performance metrics, and
+                    stakeholder engagement.
+                </p>
+                <p>
+                    Focus: operational data, service redesign, communicating impact.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">Visual Placeholder</div>
+            <div class="project-content">
+                <h3>Commercial Determinants of Health</h3>
+                <p>
+                    Analysis of how commercial practices influence health behaviours,
+                    with a particular focus on youth exposure and regulatory gaps.
+                </p>
+                <p>
+                    Focus: mixed methods, policy critique, public health advocacy.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="career">
+    <h2>Career & Professional Experience</h2>
+    <p>
+        Before moving fully into public health and analytics, I worked in healthcare
+        workforce and recruitment roles that operated in close partnership with NHS
+        trusts and independent providers. My work focused on supplying doctors and
+        nurses into frontline services, often during periods of significant system
+        pressure.
+    </p>
+    <p>
+        I supported workforce delivery through major periods of change, including
+        Covid-19, Brexit-related immigration shifts, and the implementation of GDPR.
+        This required managing uncertainty, translating complex regulatory requirements
+        into operational processes, and communicating clearly with clinicians, managers,
+        and external stakeholders.
+    </p>
+    <p>
+        These roles developed my ability to prioritise competing demands, work with
+        incomplete information, and communicate with impact. I regularly used structured
+        approaches such as the Eisenhower Matrix for prioritisation and the Situation,
+        Behaviour, Impact framework to support effective communication and feedback.
+    </p>
+    <p>
+        This background informs how I approach data analysis today. I am less interested
+        in analysis for its own sake, and more focused on producing insight that is
+        timely, relevant, and genuinely useful for people making decisions in complex
+        systems.
+    </p>
+</section>
+
+<footer>
+    © 2026 Michael Carr | Health & Data Analytics Portfolio
+</footer>
+
+</body>
+</html>
